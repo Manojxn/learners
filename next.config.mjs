@@ -5,13 +5,7 @@ const nextConfig = {
       "static.wixstatic.com",
       "images.pexels.com"
     ]
-  },
-  experimental: {
-    appDir: true
   }
 };
 
 export default nextConfig;
-
-
-
