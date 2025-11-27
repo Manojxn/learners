@@ -16,7 +16,7 @@ export default function HeroSection() {
             {/* Background Image - Full Screen */}
             <div className="absolute inset-0 left-0 right-0 z-0">
                 <div
-                    className="absolute inset-0 w-screen bg-cover bg-top bg-no-repeat"
+                    className="absolute inset-0 w-screen bg-contain md:bg-cover bg-center bg-no-repeat"
                     style={{
                         backgroundImage: "url('/images/fags.jpg')",
                         marginLeft: '50%',

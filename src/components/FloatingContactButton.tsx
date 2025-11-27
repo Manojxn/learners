@@ -14,19 +14,19 @@ const contactOptions = [
     {
         icon: Phone,
         label: "Call",
-        href: "tel:+919876543210",
+        href: "tel:+919916397939",
         color: "from-green-500 to-emerald-500",
     },
     {
         icon: Send,
         label: "WhatsApp",
-        href: "https://wa.me/919876543210",
+        href: "https://wa.me/919916397939",
         color: "from-green-400 to-green-600",
     },
     {
         icon: Linkedin,
         label: "LinkedIn",
-        href: "https://www.linkedin.com/company/learners-global",
+        href: "https://www.linkedin.com/company/learners-digital/",
         color: "from-blue-600 to-blue-700",
     },
 ];
@@ -97,8 +97,8 @@ export default function FloatingContactButton() {
                 whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 0.9 }}
                 className={`relative flex items-center justify-center w-16 h-16 rounded-full shadow-2xl transition-all duration-300 ${isOpen
-                        ? "bg-red-500 hover:bg-red-600"
-                        : "bg-gradient-to-r from-primary to-secondary hover:shadow-primary/50"
+                    ? "bg-red-500 hover:bg-red-600"
+                    : "bg-gradient-to-r from-primary to-secondary hover:shadow-primary/50"
                     }`}
             >
                 <AnimatePresence mode="wait">

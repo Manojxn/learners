@@ -72,7 +72,7 @@ const Footer = () => {
                       {/* You can replace this with actual social media icons */}
                       {social.icon === 'facebook' && 'f'}
                       {social.icon === 'twitter' && '𝕏'}
-                      {social.icon === 'instagram' && '📸'}
+                      {social.icon === 'instagram' && 'I'}
                       {social.icon === 'linkedin' && 'in'}
                     </span>
                   </div>
