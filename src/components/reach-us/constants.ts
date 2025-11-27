@@ -1,0 +1,43 @@
+import { Location } from "./types";
+
+export const DEFAULT_LOCATIONS: Location[] = [
+    {
+        _id: "loc-1",
+        locationName: "Learners School Campus",
+        verticalAssociation: "Learners School",
+        locationImage: "/images/location school.jpg",
+        streetAddress: "CA Site #1, Hanchya Main Rd, Sathgalli",
+        city: "Mysore",
+        stateProvince: "Karnataka",
+        zipPostalCode: "570029",
+        phoneNumber: "+91 9916397939",
+        emailAddress: "learnerspuc@gmail.com",
+        mapEmbedUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3704.890621350378!2d76.70083249999999!3d12.332745!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3baf71616ce77101%3A0x49dced4de0784380!2sLearners%20Global%20School%20%26%20PU%20College!5e1!3m2!1sen!2sin!4v1764243660879!5m2!1sen!2sin",
+    },
+    {
+        _id: "loc-2",
+        locationName: "Learners Global PU College",
+        verticalAssociation: "Learners Global PU College",
+        locationImage: "/images/vijaynagar.png",
+        streetAddress: "#1152, 6th Main, Vijayanagar 1st Stage",
+        city: "Mysore",
+        stateProvince: "Karnataka",
+        zipPostalCode: "570017",
+        phoneNumber: "+91 9916397939",
+        emailAddress: "learnerspuc@gmail.com",
+        mapEmbedUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3704.8711447259357!2d76.61254897483!3d12.334122587925734!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3baf7af580c40ee3%3A0x24de657c5afc89df!2sLearners%20PU%20College!5e1!3m2!1sen!2sin!4v1764243959448!5m2!1sen!2sin",
+    },
+    {
+        _id: "loc-3",
+        locationName: "Learners Digital",
+        verticalAssociation: "GCC & Talent Acquisition",
+        locationImage: "/images/nesaratechpark.jpg",
+        streetAddress: "2nd Floor, Tower-2, Plot No. 278, Hebbal Industrial Area, near Kidds Ice Creams,",
+        city: "Mysuru",
+        stateProvince: "Karnataka",
+        zipPostalCode: "570016",
+        phoneNumber: "+91 9916397939",
+        emailAddress: "info@learnersdigital.com",
+        mapEmbedUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3704.6554902348107!2d76.59147947483041!3d12.349365787911756!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3baf7be1a10aed1b%3A0x4b490c8db9dbf577!2z4LKo4LOH4LK44LKwIOCypOCyvuCyguCypOCzjeCysOCyv-CylSDgsongsqbgs43gsq_gsr7gsqjgsrXgsqg!5e1!3m2!1sen!2sin!4v1764244093698!5m2!1sen!2sin",
+    },
+];
