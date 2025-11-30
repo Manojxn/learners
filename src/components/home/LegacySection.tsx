@@ -23,7 +23,7 @@ const campusImages = [
         caption: "The Mysore Prince's visit on World Youth Skills Day!"
     },
     {
-        src: "/images/campus/NEETcoaching.jpg",
+        src: "/images/campus/NEETCoaching.jpg",
         caption: "NEET Coaching @ KSOU!"
     },
     {
