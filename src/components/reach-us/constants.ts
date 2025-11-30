@@ -3,7 +3,7 @@ import { Location } from "./types";
 export const DEFAULT_LOCATIONS: Location[] = [
     {
         _id: "loc-1",
-        locationName: "Learners School Campus",
+        locationName: "Learners Global School Campus",
         verticalAssociation: "Learners School",
         locationImage: "/images/location school.jpg",
         streetAddress: "CA Site #1, Hanchya Main Rd, Sathgalli",
@@ -30,7 +30,7 @@ export const DEFAULT_LOCATIONS: Location[] = [
     {
         _id: "loc-3",
         locationName: "Learners Digital",
-        verticalAssociation: "GCC & Talent Acquisition",
+        verticalAssociation: "GCC",
         locationImage: "/images/nesaratechpark.jpg",
         streetAddress: "2nd Floor, Tower-2, Plot No. 278, Hebbal Industrial Area, near Kidds Ice Creams,",
         city: "Mysuru",

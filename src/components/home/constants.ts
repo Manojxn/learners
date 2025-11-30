@@ -3,20 +3,20 @@ import { Vertical, Recognition, Differentiator } from "./types";
 export const DEFAULT_VERTICALS: Vertical[] = [
     {
         _id: "vertical-1",
-        title: "Learners School",
+        title: "Learners Global School & PU College",
         shortDescription:
-            "Fostering young minds with a holistic curriculum for foundational excellence and character development.",
+            "Fostering young minds with a holistic CBSE school curriculum from Pre-KG to 12th, focused on foundational excellence and character development",
         verticalImage:
-            "https://images.pexels.com/photos/256395/pexels-photo-256395.jpeg?auto=compress&cs=tinysrgb&w=1200",
+            "/images/school_college.jpg",
         knowMoreUrl: "#",
     },
     {
         _id: "vertical-2",
-        title: "Learners Global PU College",
+        title: "Learners PU College",
         shortDescription:
-            "Preparing students for higher education with rigorous academic programs and career-focused guidance.",
+            "Preparing students for higher education through rigorous academic programs and career-focused guidance, strengthened by integrated NEET, JEE, CET, and IIT coaching",
         verticalImage:
-            "/images/college.jpg",
+            "/images/college.png",
         knowMoreUrl: "#",
     },
     {

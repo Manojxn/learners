@@ -1,9 +1,9 @@
 "use client";
 
-import { motion, useAnimation } from "framer-motion";
+import { motion } from "framer-motion";
 import { Image } from "@/components/ui/image";
 import { ChevronLeft, ChevronRight } from "lucide-react";
-import { useState, useEffect } from "react";
+import { useState, useRef } from "react";
 
 const partners = [
     {
@@ -34,42 +34,22 @@ const partners = [
 ];
 
 // Duplicate partners for infinite scroll effect
-const duplicatedPartners = [...partners, ...partners, ...partners];
+const duplicatedPartners = [...partners, ...partners, ...partners, ...partners];
 
 export default function PartnersSection() {
     const [isPaused, setIsPaused] = useState(false);
-    const controls = useAnimation();
-
-    useEffect(() => {
-        if (!isPaused) {
-            controls.start({
-                x: [0, -100 * partners.length],
-                transition: {
-                    x: {
-                        repeat: Infinity,
-                        repeatType: "loop",
-                        duration: 20,
-                        ease: "linear",
-                    },
-                },
-            });
-        } else {
-            controls.stop();
-        }
-    }, [isPaused, controls]);
+    const containerRef = useRef<HTMLDivElement>(null);
 
     const scrollLeft = () => {
-        controls.start({
-            x: "+=300",
-            transition: { duration: 0.5, ease: "easeOut" },
-        });
+        if (containerRef.current) {
+            containerRef.current.scrollBy({ left: -400, behavior: 'smooth' });
+        }
     };
 
     const scrollRight = () => {
-        controls.start({
-            x: "-=300",
-            transition: { duration: 0.5, ease: "easeOut" },
-        });
+        if (containerRef.current) {
+            containerRef.current.scrollBy({ left: 400, behavior: 'smooth' });
+        }
     };
 
     return (
@@ -145,13 +125,25 @@ export default function PartnersSection() {
 
                     {/* Scrolling Container */}
                     <div
-                        className="overflow-hidden mx-12"
+                        ref={containerRef}
+                        className="overflow-x-auto mx-12 scrollbar-hide"
                         onMouseEnter={() => setIsPaused(true)}
                         onMouseLeave={() => setIsPaused(false)}
+                        style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}
                     >
                         <motion.div
                             className="flex gap-6 sm:gap-8"
-                            animate={controls}
+                            animate={!isPaused ? {
+                                x: [0, -100 * partners.length],
+                            } : {}}
+                            transition={{
+                                x: {
+                                    repeat: Infinity,
+                                    repeatType: "loop",
+                                    duration: 8, // Fast: 8 seconds
+                                    ease: "linear",
+                                },
+                            }}
                         >
                             {duplicatedPartners.map((partner, index) => (
                                 <motion.a

@@ -58,7 +58,7 @@ export default function HeroSection() {
                         transition={{ delay: 0.4, duration: 0.6 }}
                         className="font-paragraph text-sm sm:text-base md:text-lg lg:text-xl text-foreground/80 mb-6 sm:mb-8 leading-relaxed max-w-2xl"
                     >
-                        Learners School &amp; PU College is dedicated to fostering academic excellence
+                        Learners Global School, Learners PU College & Learners Digital in Mysore is dedicated to fostering academic excellence
                         and holistic development in a nurturing, state-of-the-art environment.
                     </motion.p>
                     <motion.div

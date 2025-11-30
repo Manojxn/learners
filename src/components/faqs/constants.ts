@@ -42,7 +42,7 @@ export const DEFAULT_FAQS: FAQ[] = [
         _id: "faq-pop-5",
         question: "How can businesses and corporate professionals collaborate with Learners Global?",
         answer:
-            "Learners Global welcomes partnerships for internships, talent acquisition, skill development workshops, guest lectures, and corporate social responsibility initiatives. Please contact our GCC & Talent Acquisition department for collaboration opportunities.",
+            "Learners Global welcomes partnerships for internships, talent acquisition, skill development workshops, guest lectures, and corporate social responsibility initiatives. Please contact our GCC department for collaboration opportunities.",
         category: "Partnerships",
         isFeatured: true,
         displayOrder: 5,
@@ -142,7 +142,7 @@ export const DEFAULT_FAQS: FAQ[] = [
         _id: "faq-part-1",
         question: "How can businesses and corporate professionals collaborate with Learners Global?",
         answer:
-            "Organizations can collaborate with Learners Global through internships, campus recruitment, mentorship programs, workshops, and CSR initiatives. Please contact the GCC & Talent Acquisition team for a tailored partnership plan.",
+            "Organizations can collaborate with Learners Global through internships, campus recruitment, mentorship programs, workshops, and CSR initiatives. Please contact the GCC team for a tailored partnership plan.",
         category: "Partnerships",
     },
 

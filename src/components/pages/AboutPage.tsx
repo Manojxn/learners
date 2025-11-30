@@ -19,46 +19,109 @@ import type { Event } from "@/components/about/Events";
 
 const DEFAULT_TIMELINE: TimelineItem[] = [
   {
-    _id: "tl-2005",
-    year: "2005",
-    title: "Founding of Learners Global School",
+    _id: "tl-2025",
+    year: "2025",
+    title: "Setup of GCCs for Onyx & Abacus Insights through Learners Digital",
     description:
-      "Learners Global School was established with a vision to provide holistic education, fostering academic excellence and character development in a nurturing environment.",
-  },
-  {
-    _id: "tl-2012",
-    year: "2012",
-    title: "Launch of PU College Division",
-    description:
-      "Responding to the growing demand for quality pre-university education, Learners Global PU College was inaugurated, offering specialized streams in Science and Commerce.",
-  },
-  {
-    _id: "tl-2018",
-    year: "2018",
-    title: "Introduction of GCC & Talent Acquisition",
-    description:
-      "To bridge the gap between education and industry, the GCC & Talent Acquisition division was launched, focusing on career guidance, skill development, and placement assistance for students.",
-  },
-  {
-    _id: "tl-2020",
-    year: "2020",
-    title: "Digital Learning Transformation",
-    description:
-      "In response to global changes, Learners Global successfully implemented a robust digital learning platform, ensuring uninterrupted and high-quality education for all students.",
-  },
-  {
-    _id: "tl-2021",
-    year: "2021",
-    title: "Accreditation and Academic Excellence",
-    description:
-      "Learners Global achieved significant academic milestones, receiving prestigious accreditations and consistently ranking among the top educational institutions in the region for its innovative teaching methodologies.",
+      "Established Global Capability Centres (GCCs) for Onyx and Abacus Insights under Learners Digital, expanding the organization's reach into global technology partnerships.",
   },
   {
     _id: "tl-2023",
     year: "2023",
-    title: "Community Engagement & Global Partnerships",
+    title: "Launch of Learners Global School & PU College, Mysore",
     description:
-      "Furthering its commitment to societal impact, Learners Global initiated several community outreach programs and forged international partnerships to offer global exposure and exchange opportunities to its students.",
+      "Founded Learners Global School and PU College, Mysore, taking on the roles of Founder Director and Founder Principal, bringing global experience back to the field of education.",
+  },
+  {
+    _id: "tl-2021",
+    year: "2021",
+    title: "Establishment of Learners Digital",
+    description:
+      "Founded Learners Digital, aiming to create a modern platform for skill development, technology training, and learning innovation.",
+  },
+  {
+    _id: "tl-2012",
+    year: "2012",
+    title: "Received Honorary Citizen award from Government of China",
+    description:
+      "Murali Mohan Konareddy, Head of Education and Research, Infosys Technologies (China), was conferred the title of 'Honorary citizen of Nahu district' by Joaxing Nahu District People's government during the 'Spring in Nanhu' function held in China.",
+  },
+  {
+    _id: "tl-2011-1",
+    year: "2011",
+    title: "Setup Learners Pre University College in Mysore",
+    description:
+      "The long cherished dream and passion to provide a PU college with high standards of learning has culminated in the founding of Learners Pre-University College in the year 2011.",
+  },
+  {
+    _id: "tl-2011-2",
+    year: "2011",
+    title: "Received Extraordinary Science and Technology mentor award",
+    description:
+      "Mr. Murali has received the Extraordinary Science and Technology mentor award for his contribution in the field.",
+  },
+  {
+    _id: "tl-2010-1",
+    year: "2010",
+    title: "Setup Infosys China Education Center at Jiaxing",
+    description:
+      "With his previous experience, Mr. Murali has handled a huge responsibility of setting up Education Center in China very effectively.",
+  },
+  {
+    _id: "tl-2010-2",
+    year: "2010",
+    title: "Received Infosys Excellence Award for people development",
+    description:
+      "Mr. Murali has been honoured with Infosys Excellence Award for his contribution towards people development.",
+  },
+  {
+    _id: "tl-2008-2014",
+    year: "2008–2014",
+    title: "Infosys China",
+    description:
+      "Continued his journey with Infosys in China, contributing to global operations, training, and technology development.",
+  },
+  {
+    _id: "tl-2004-2008",
+    year: "2004–2008",
+    title: "Part of the Core Team Establishing Infosys Global Institute, Mysore",
+    description:
+      "Was an integral member of the team that helped set up the Global Education Centre (GEC) of Infosys in Mysore, one of the world's largest corporate training campuses.",
+  },
+  {
+    _id: "tl-2000-2004",
+    year: "2000–2004",
+    title: "Project Coordinator at Aetna (Infosys Assignment)",
+    description:
+      "Worked with Aetna as part of Infosys, taking on the responsibility of Project Coordinator, managing large-scale client processes and delivery operations.",
+  },
+  {
+    _id: "tl-1998-2000",
+    year: "1998–2000",
+    title: "Infosys (Bangalore & Pune)",
+    description:
+      "Joined Infosys in Bangalore and Pune as a Trainee and later an Employee, stepping into the corporate technology world.",
+  },
+  {
+    _id: "tl-1996-1998",
+    year: "1996–1998",
+    title: "IIT Kanpur",
+    description:
+      "Associated with IIT Kanpur, gaining valuable exposure to advanced academic and technical environments.",
+  },
+  {
+    _id: "tl-1992-1996",
+    year: "1992–1996",
+    title: "Coordinator, Vishvam ECET Coaching Centre, Tirupati",
+    description:
+      "Served as the Technical Coordinator and Director at Vishvam ECET Coaching Centre, Tirupati, where he oversaw academic planning, training systems, and student learning outcomes.",
+  },
+  {
+    _id: "tl-1991",
+    year: "1991",
+    title: "Beginning as a Volunteer Teacher",
+    description:
+      "Murali Konareddy sir began his career in 1991 by volunteering as a Mathematics teacher at Rangasamudram Government High School, Andhra Pradesh, marking the start of his commitment to education.",
   },
 ];
 
@@ -170,11 +233,12 @@ const AboutPageContent = () => {
       <Suspense fallback={<LoadingFallback />}>
         <Header />
         <Hero />
-        <AboutSection />
         <MissionVision />
+        <AboutSection />
         <Timeline timeline={timeline} />
-        <Founder />
-        <Events events={events} />
+
+
+        {/* <Events events={events} /> */}
         <Footer />
       </Suspense>
     </div>

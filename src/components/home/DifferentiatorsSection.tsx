@@ -29,7 +29,7 @@ export default function DifferentiatorsSection({ differentiators }: Differentiat
                         What Sets Us Apart
                     </h2>
                     <p className="font-paragraph text-sm sm:text-base md:text-lg text-foreground/70 max-w-3xl mx-auto px-4">
-                        Our unique approach combines tradition with innovation, creating an unparalleled
+                        Our unique approach combines tradition with innovation,<br /> creating an unparalleled
                         learning experience.
                     </p>
                 </motion.div>
