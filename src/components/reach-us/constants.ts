@@ -3,8 +3,8 @@ import { Location } from "./types";
 export const DEFAULT_LOCATIONS: Location[] = [
     {
         _id: "loc-1",
-        locationName: "Learners Global School Campus",
-        verticalAssociation: "Learners School",
+        locationName: "Learners Global Campus",
+        verticalAssociation: "Learners Global School & College Campus",
         locationImage: "/images/location school.jpg",
         streetAddress: "CA Site #1, Hanchya Main Rd, Sathgalli",
         city: "Mysore",
@@ -16,8 +16,8 @@ export const DEFAULT_LOCATIONS: Location[] = [
     },
     {
         _id: "loc-2",
-        locationName: "Learners Global PU College",
-        verticalAssociation: "Learners Global PU College",
+        locationName: "Learners PU College",
+        verticalAssociation: "Learners PU College",
         locationImage: "/images/vijaynagar.png",
         streetAddress: "#1152, 6th Main, Vijayanagar 1st Stage",
         city: "Mysore",
