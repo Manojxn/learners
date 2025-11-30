@@ -43,7 +43,7 @@ A modern, professional website for Learners Global educational institution, buil
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/your-username/learners-next.git
+   git clone https://github.com/Manojxn/learners.git
    cd learners-next
    ```
 
