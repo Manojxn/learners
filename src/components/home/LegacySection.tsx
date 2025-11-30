@@ -252,9 +252,12 @@ export default function LegacySection() {
                 {/* Combined Stats & Differentiators - Fits in One Viewport */}
                 <div className="space-y-8 sm:space-y-12">
                     {/* Stats Row - Compact Horizontal Layout */}
-                    <div className="grid grid-cols-5 gap-3 sm:gap-4 lg:gap-6">
+                    <div className="grid grid-cols-4 sm:grid-cols-5 gap-2 sm:gap-4 lg:gap-6">
                         {stats.map((stat, index) => {
                             const Icon = stat.icon;
+                            // Hide "Campuses & Centers" on mobile
+                            const isHiddenOnMobile = stat.label === "Campuses & Centers";
+
                             return (
                                 <motion.div
                                     key={index}
@@ -263,17 +266,17 @@ export default function LegacySection() {
                                     viewport={{ once: true }}
                                     transition={{ duration: 0.4, delay: index * 0.05 }}
                                     whileHover={{ y: -4, scale: 1.03 }}
-                                    className="group relative bg-white rounded-xl sm:rounded-2xl p-3 sm:p-4 lg:p-6 shadow-md hover:shadow-xl transition-all duration-300 border border-gray-100 text-center"
+                                    className={`group relative bg-white rounded-xl sm:rounded-2xl p-2 sm:p-4 lg:p-6 shadow-md hover:shadow-xl transition-all duration-300 border border-gray-100 text-center ${isHiddenOnMobile ? 'hidden sm:block' : ''}`}
                                 >
                                     <div className="mb-2 sm:mb-3">
                                         <div className={`inline-flex items-center justify-center w-8 h-8 sm:w-10 sm:h-10 lg:w-12 lg:h-12 rounded-lg sm:rounded-xl bg-gradient-to-br ${stat.color} shadow-sm group-hover:shadow-md transition-all duration-300 group-hover:scale-110`}>
                                             <Icon className="w-4 h-4 sm:w-5 sm:h-5 lg:w-6 lg:h-6 text-white" />
                                         </div>
                                     </div>
-                                    <div className={`text-xl sm:text-2xl lg:text-3xl font-bold mb-1 bg-clip-text text-transparent bg-gradient-to-br ${stat.color}`}>
+                                    <div className={`text-lg sm:text-2xl lg:text-3xl font-bold mb-1 bg-clip-text text-transparent bg-gradient-to-br ${stat.color}`}>
                                         {stat.value}
                                     </div>
-                                    <div className="text-xs sm:text-sm text-gray-600 font-medium leading-tight">
+                                    <div className="text-[10px] sm:text-sm text-gray-600 font-medium leading-tight">
                                         {stat.label}
                                     </div>
                                     <div className={`mt-2 sm:mt-3 h-0.5 sm:h-1 w-8 sm:w-12 mx-auto bg-gradient-to-r ${stat.color} rounded-full group-hover:w-full transition-all duration-500`} />

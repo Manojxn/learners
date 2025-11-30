@@ -48,7 +48,7 @@ export default function MapModal({ isOpen, onClose, location }: MapModalProps) {
                                 <X className="w-5 h-5 text-gray-500" />
                             </button>
                         </div>
-                        <div className="aspect-video w-full bg-gray-100 rounded-lg overflow-hidden">
+                        <div className="aspect-video w-full bg-gray-100  overflow-hidden">
                             <div className="w-full h-full">
                                 {location.mapEmbedUrl ? (
                                     <iframe

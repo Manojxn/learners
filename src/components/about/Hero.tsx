@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 
 const Hero = () => {
   return (
-    <section className="relative w-full bg-gradient-to-r from-primary/5 to-secondary/5 py-16 sm:py-24 md:py-32 lg:py-36 overflow-hidden">
+    <section className="relative w-full bg-gradient-to-r from-primary/5 to-secondary/5 pt-12 pb-8 sm:py-24 md:py-32 lg:py-36 overflow-hidden">
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
         <div
@@ -30,7 +30,7 @@ const Hero = () => {
             </span>
           </motion.div>
           <motion.h1
-            className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-foreground mb-4 sm:mb-6 px-4 sm:px-0"
+            className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight leading-tight text-foreground mb-4 sm:mb-6 px-4 sm:px-0"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.1 }}

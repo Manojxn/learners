@@ -190,9 +190,9 @@ const SuccessStoriesPage = () => {
                             {/* Close Button */}
                             <button
                                 onClick={() => setSelectedStory(null)}
-                                className="sticky top-4 right-4 float-right z-10 w-10 h-10 bg-white rounded-full shadow-lg flex items-center justify-center hover:bg-gray-100 transition-colors"
+                                className="absolute top-4 right-4 z-20 w-10 h-10 bg-white/90 backdrop-blur-sm rounded-full shadow-lg flex items-center justify-center hover:bg-white transition-colors"
                             >
-                                <X className="w-5 h-5" />
+                                <X className="w-5 h-5 text-gray-800" />
                             </button>
 
                             {/* Image Carousel at Top */}
@@ -229,8 +229,8 @@ const SuccessStoriesPage = () => {
                                                         key={idx}
                                                         onClick={() => setCurrentImageIndex(idx)}
                                                         className={`h-2 rounded-full transition-all ${currentImageIndex === idx
-                                                                ? 'bg-white w-8'
-                                                                : 'bg-white/60 hover:bg-white/80 w-2'
+                                                            ? 'bg-white w-8'
+                                                            : 'bg-white/60 hover:bg-white/80 w-2'
                                                             }`}
                                                     />
                                                 ))}
@@ -241,10 +241,11 @@ const SuccessStoriesPage = () => {
                             </div>
 
                             {/* Content Below */}
-                            <div className="p-8 space-y-6">
+                            <div className="p-6 sm:p-8 space-y-6">
                                 <div>
-                                    <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-2">
-                                        Success Story: <span className="text-primary">{selectedStory.name}</span>
+                                    <span className="block text-sm font-bold text-gray-500 uppercase tracking-wider mb-2">Success Story</span>
+                                    <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-primary mb-2">
+                                        {selectedStory.name}
                                     </h2>
                                     <p className="text-xl text-primary font-semibold mb-3">{selectedStory.title}</p>
                                     <div className="flex items-center gap-2 text-sm text-gray-600">
@@ -273,7 +274,7 @@ const SuccessStoriesPage = () => {
                                 </div>
 
                                 {/* Story */}
-                                <div className="space-y-4 text-gray-700 text-base leading-relaxed">
+                                <div className="space-y-4 text-gray-700 text-base leading-relaxed text-justify">
                                     {selectedStory.story.map((paragraph, idx) => (
                                         <p key={idx}>{paragraph}</p>
                                     ))}
