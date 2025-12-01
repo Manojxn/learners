@@ -23,9 +23,9 @@ export default function LocationsSection({ locations, onLocationClick }: Locatio
                     transition={{ duration: 0.6 }}
                     className="text-center mb-12"
                 >
-                    <span className="inline-block px-4 py-2 rounded-full text-sm font-medium bg-primary/10 text-primary mb-4">
+                    {/* <span className="inline-block px-4 py-2 rounded-full text-sm font-medium bg-primary/10 text-primary mb-4">
                         Our Campuses
-                    </span>
+                    </span> */}
                     <h2 className="text-3xl sm:text-4xl font-bold tracking-tight text-gray-900 mb-4">
                         Find Us Near You
                     </h2>

@@ -47,12 +47,12 @@ const Footer = () => {
   const contactInfo = [
     {
       icon: <Phone className="w-4 h-4 text-primary mt-0.5 flex-shrink-0" />,
-      text: "+91 9916397939",
+      text: "+91 9916933202",
     },
     {
       icon: <Mail className="w-4 h-4 text-primary mt-0.5 flex-shrink-0" />,
-      text: "info@learnersglobal.com",
-      href: "mailto:info@learnersglobal.com",
+      text: "connect@learnersdigital.com",
+      href: "mailto:connect@learnersdigital.com",
     },
     {
       icon: <MapPin className="w-4 h-4 text-primary mt-0.5 flex-shrink-0" />,

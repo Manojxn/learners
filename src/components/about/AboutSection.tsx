@@ -21,7 +21,7 @@ const founders = [
             "With decades of experience in education and corporate training, we've built a foundation that bridges academic excellence with real-world readiness."
         ],
         quote: "Learners Today, Leaders Tomorrow",
-        email: "murali@learnersglobalschool.com",
+        email: "murali@learnersdigital.com",
         phone: "+91 9916933202"
     },
     {
@@ -37,7 +37,7 @@ const founders = [
             "I firmly believe in the reciprocal nature of education: just as students learn from us, they motivate, challenge, and energize us in return. This dynamic exchange is what fuels my passion for teaching and leadership.",
             "I am deeply committed to the cause of offering each and every student a superior learning experience on campus, nurturing their academic growth, but also the general character and potential of the students."
         ],
-        email: "madhavi@learnersglobalschool.com",
+        email: "madhavi@learnersdigital.com",
         phone: "+91 9916933202"
     }
 ];
@@ -102,9 +102,9 @@ const AboutSection = () => {
                     transition={{ duration: 0.6 }}
                     className="text-center mb-12 sm:mb-16"
                 >
-                    <span className="inline-block px-4 py-2 rounded-full text-sm font-medium bg-blue-50 text-blue-600 border border-blue-200 mb-4">
+                    {/* <span className="inline-block px-4 py-2 rounded-full text-sm font-medium bg-blue-50 text-blue-600 border border-blue-200 mb-4">
                         From Our Founders
-                    </span>
+                    </span> */}
                     <h2 className="font-heading text-3xl sm:text-4xl md:text-5xl text-gray-900 font-bold">
                         Founder's{" "}
                         <span className="bg-clip-text text-transparent bg-gradient-to-r from-primary to-secondary">

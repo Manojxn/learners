@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import { Image } from "@/components/ui/image";
 import { Trophy, Award, Medal, Star, Sparkles, GraduationCap, Heart, ChevronLeft, ChevronRight } from "lucide-react";
 
 const baseAchievements = [
@@ -20,6 +21,7 @@ const baseAchievements = [
         title: "Infosys Valuable Partner Award",
         description: "Recognised for collaboration in academic development and talent enablement initiatives.",
         icon: Award,
+        image: "/images/Awards/infosys.png",
         gradient: "from-blue-500 to-indigo-600",
         bgGradient: "from-blue-50 to-indigo-50",
         accentColor: "text-blue-600",
@@ -30,7 +32,7 @@ const baseAchievements = [
         title: "Narayana Hrudayalaya (NH) Scholarship Recognition",
         description: "Scholarship support for NEET aspirants and separate hostel facilities for boys & girls.",
         icon: GraduationCap,
-        gradient: "from-emerald-500 to-teal-600",
+        gradient: "from-emerald-50 to-teal-600",
         bgGradient: "from-emerald-50 to-teal-50",
         accentColor: "text-emerald-600",
         borderColor: "border-emerald-200",
@@ -196,8 +198,18 @@ export default function RecognitionsSection() {
                                                             <div className="relative z-10">
                                                                 {/* Icon Badge */}
                                                                 <div className="mb-6">
-                                                                    <div className={`inline-flex items-center justify-center w-16 h-16 sm:w-20 sm:h-20 rounded-2xl bg-gradient-to-br ${achievement.gradient} shadow-lg group-hover:shadow-xl transition-all duration-300 group-hover:scale-110`}>
-                                                                        <Icon className="w-8 h-8 sm:w-10 sm:h-10 text-white" />
+                                                                    <div className={`inline-flex items-center justify-center w-16 h-16 sm:w-20 sm:h-20 rounded-2xl bg-gradient-to-br ${achievement.gradient} shadow-lg group-hover:shadow-xl transition-all duration-300 group-hover:scale-110 overflow-hidden`}>
+                                                                        {(achievement as any).image ? (
+                                                                            <Image
+                                                                                src={(achievement as any).image}
+                                                                                alt={achievement.title}
+                                                                                width={80}
+                                                                                height={80}
+                                                                                className="w-full h-full object-cover"
+                                                                            />
+                                                                        ) : (
+                                                                            <Icon className="w-8 h-8 sm:w-10 sm:h-10 text-white" />
+                                                                        )}
                                                                     </div>
                                                                     {/* Star badge */}
                                                                     <div className="inline-block ml-3 align-top">
@@ -256,13 +268,13 @@ export default function RecognitionsSection() {
                     transition={{ duration: 0.6, delay: 0.4 }}
                     className="mt-12 text-center"
                 >
-                    <div className="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-amber-50 to-orange-50 rounded-full border border-amber-200">
+                    {/* <div className="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-amber-50 to-orange-50 rounded-full border border-amber-200">
                         <Medal className="w-5 h-5 text-amber-600" />
                         <span className="text-sm font-medium text-gray-700">
                             Committed to Excellence in Education
                         </span>
                         <Medal className="w-5 h-5 text-amber-600" />
-                    </div>
+                    </div> */}
                 </motion.div>
             </div>
         </section>

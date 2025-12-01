@@ -92,9 +92,9 @@ export default function PartnersSection() {
                     transition={{ duration: 0.6 }}
                     className="text-center mb-12 sm:mb-16"
                 >
-                    <span className="inline-block px-4 py-2 rounded-full text-sm font-medium bg-primary/10 text-primary mb-4">
+                    {/* <span className="inline-block px-4 py-2 rounded-full text-sm font-medium bg-primary/10 text-primary mb-4">
                         Our Partners
-                    </span>
+                    </span> */}
                     <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold tracking-tight text-gray-900 mb-4 leading-tight">
                         Trusted by <span className="text-primary">Industry Leaders</span>
                     </h2>

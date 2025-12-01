@@ -16,17 +16,52 @@ const successStories = [
     },
     {
         id: 2,
-        name: "Radhika",
-        image: "/images/SuccesStory/radhika.JPG",
-        title: "From Rural Challenges to State Topper and Future Doctor",
-        batch: "2014-2016 PUC"
+        name: "Shuchitha M N",
+        image: "/images/SuccesStory/shuchitha.png",
+        title: "Empowered by Individual Attention and Holistic Growth",
+        batch: "2020-2022 Batch"
     },
     {
         id: 3,
-        name: "Radhika",
-        image: "/images/SuccesStory/radhika.JPG",
-        title: "From Rural Challenges to State Topper and Future Doctor",
-        batch: "2014-2016 PUC"
+        name: "Anju Bishwas",
+        image: "/images/SuccesStory/anju.png",
+        title: "Exceptional Faculty Guidance and Holistic Development",
+        batch: "II PU 2022"
+    },
+    {
+        id: 4,
+        name: "Pruthviraj D M",
+        image: "/images/SuccesStory/pruthviraj.png",
+        title: "From Solid Start to State Topper and NEET Success",
+        batch: "2017-2019 PUC"
+    },
+    {
+        id: 5,
+        name: "Thanushree",
+        image: "/images/SuccesStory/thanushree.png",
+        title: "Scientific Learning Strategies & Holistic Growth",
+        batch: "2017-2019 Batch"
+    },
+    {
+        id: 6,
+        name: "Kshema",
+        image: "/images/SuccesStory/kshema.png",
+        title: "Driven by Quality Education and Innovation",
+        batch: "2016 Batch"
+    },
+    {
+        id: 7,
+        name: "Varsha",
+        image: "/images/SuccesStory/varsha.png",
+        title: "From Strong Foundations to State Topper and Medical Aspirations",
+        batch: "PUC Alumnus"
+    },
+    {
+        id: 8,
+        name: "Darshan H. Girigowda",
+        image: "/images/SuccesStory/p1.png",
+        title: "Excellence Amidst Challenges: A Journey of Resilience",
+        batch: "2021-2022 Batch"
     }
 ];
 
@@ -81,9 +116,9 @@ const SuccessStoriesCarousel = () => {
                         viewport={{ once: true }}
                         transition={{ duration: 0.6 }}
                     >
-                        <span className="inline-block px-4 py-2 rounded-full text-sm font-medium bg-primary/10 text-primary border border-primary/20 mb-3">
+                        {/* <span className="inline-block px-4 py-2 rounded-full text-sm font-medium bg-primary/10 text-primary border border-primary/20 mb-3">
                             Student Success
-                        </span>
+                        </span> */}
                         <h2 className="font-heading text-3xl sm:text-4xl font-bold text-gray-900 mb-3">
                             Success{" "}
                             <span className="bg-clip-text text-transparent bg-gradient-to-r from-primary to-secondary">

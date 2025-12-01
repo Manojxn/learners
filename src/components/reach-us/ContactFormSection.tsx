@@ -100,8 +100,8 @@ export default function ContactFormSection() {
                                         </div>
                                         <div>
                                             <h3 className="text-sm font-medium text-gray-500 mb-1">Phone</h3>
-                                            <a href="tel:+919916397939" className="text-base font-medium text-gray-900 hover:text-primary transition-colors">
-                                                +91 9916397939
+                                            <a href="tel:+919916933202" className="text-base font-medium text-gray-900 hover:text-primary transition-colors">
+                                                +91 9916933202
                                             </a>
                                         </div>
                                     </div>
@@ -112,8 +112,8 @@ export default function ContactFormSection() {
                                         </div>
                                         <div>
                                             <h3 className="text-sm font-medium text-gray-500 mb-1">Email</h3>
-                                            <a href="mailto:info@learnersglobal.com" className="text-base font-medium text-gray-900 hover:text-primary transition-colors">
-                                                info@learnersglobal.com
+                                            <a href="mailto:connect@learnersdigital.com" className="text-base font-medium text-gray-900 hover:text-primary transition-colors">
+                                                connect@learnersdigital.com
                                             </a>
                                         </div>
                                     </div>

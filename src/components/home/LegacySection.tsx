@@ -34,7 +34,7 @@ const campusImages = [
 
 const stats = [
     {
-        value: "14+",
+        value: "15+",
         label: "Years of Excellence",
         icon: TrendingUp,
         color: "from-blue-500 to-indigo-600",
@@ -45,12 +45,7 @@ const stats = [
         icon: Users,
         color: "from-emerald-500 to-teal-600",
     },
-    {
-        value: "100%",
-        label: "Success Rate",
-        icon: GraduationCap,
-        color: "from-amber-500 to-orange-600",
-    },
+
     {
         value: "200+",
         label: "Expert Educators",
@@ -160,9 +155,9 @@ export default function LegacySection() {
                     transition={{ duration: 0.6 }}
                     className="text-center mb-10 sm:mb-12 md:mb-16"
                 >
-                    <span className="inline-block px-4 py-2 rounded-full text-sm font-medium bg-blue-50 text-blue-600 border border-blue-200 mb-3 sm:mb-4">
+                    {/* <span className="inline-block px-4 py-2 rounded-full text-sm font-medium bg-blue-50 text-blue-600 border border-blue-200 mb-3 sm:mb-4">
                         Our Story
-                    </span>
+                    </span> */}
                     <h2 className="font-heading text-2xl sm:text-3xl md:text-4xl lg:text-5xl text-gray-900 mb-3 sm:mb-4 font-bold px-4">
                         A Legacy of{" "}
                         <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-600 via-indigo-500 to-blue-600 whitespace-nowrap">
@@ -170,7 +165,7 @@ export default function LegacySection() {
                         </span>
                     </h2>
                     <p className="font-paragraph text-sm sm:text-base lg:text-lg text-gray-600 max-w-3xl mx-auto px-4 sm:px-6 leading-relaxed">
-                        Founded in 2011, Learners Global has grown from a single institution to a comprehensive educational ecosystem, serving thousands of students across multiple verticals. Our journey has been marked by innovation, academic excellence, and an unwavering commitment to student success.
+                        Founded in 2011, Learners has grown from a single institution to a comprehensive educational ecosystem, serving thousands of students across multiple verticals. Our journey has been marked by innovation, academic excellence, and an unwavering commitment to student success.
                     </p>
                 </motion.div>
 
@@ -252,11 +247,9 @@ export default function LegacySection() {
                 {/* Combined Stats & Differentiators - Fits in One Viewport */}
                 <div className="space-y-8 sm:space-y-12">
                     {/* Stats Row - Compact Horizontal Layout */}
-                    <div className="grid grid-cols-4 sm:grid-cols-5 gap-2 sm:gap-4 lg:gap-6">
+                    <div className="grid grid-cols-4 gap-2 sm:gap-4 lg:gap-6">
                         {stats.map((stat, index) => {
                             const Icon = stat.icon;
-                            // Hide "Campuses & Centers" on mobile
-                            const isHiddenOnMobile = stat.label === "Campuses & Centers";
 
                             return (
                                 <motion.div
@@ -266,7 +259,7 @@ export default function LegacySection() {
                                     viewport={{ once: true }}
                                     transition={{ duration: 0.4, delay: index * 0.05 }}
                                     whileHover={{ y: -4, scale: 1.03 }}
-                                    className={`group relative bg-white rounded-xl sm:rounded-2xl p-2 sm:p-4 lg:p-6 shadow-md hover:shadow-xl transition-all duration-300 border border-gray-100 text-center ${isHiddenOnMobile ? 'hidden sm:block' : ''}`}
+                                    className="group relative bg-white rounded-xl sm:rounded-2xl p-2 sm:p-4 lg:p-6 shadow-md hover:shadow-xl transition-all duration-300 border border-gray-100 text-center"
                                 >
                                     <div className="mb-2 sm:mb-3">
                                         <div className={`inline-flex items-center justify-center w-8 h-8 sm:w-10 sm:h-10 lg:w-12 lg:h-12 rounded-lg sm:rounded-xl bg-gradient-to-br ${stat.color} shadow-sm group-hover:shadow-md transition-all duration-300 group-hover:scale-110`}>
