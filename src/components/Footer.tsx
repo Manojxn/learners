@@ -196,9 +196,9 @@ const Footer = () => {
         <div className="mt-12 pt-8 border-t border-gray-200">
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
             <p className="text-xs text-gray-500 text-center md:text-left">
-              © {currentYear} Learners Global School & PU College. All rights reserved.
+              © {currentYear} Learners. All rights reserved.
             </p>
-            <div className="flex space-x-6">
+            {/* <div className="flex space-x-6">
               <Link href="/privacy-policy" className="text-xs text-gray-500 hover:text-primary transition-colors">
                 Privacy Policy
               </Link>
@@ -208,7 +208,7 @@ const Footer = () => {
               <Link href="/sitemap" className="text-xs text-gray-500 hover:text-primary transition-colors">
                 Sitemap
               </Link>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>
