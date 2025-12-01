@@ -7,7 +7,7 @@ export const DEFAULT_VERTICALS: Vertical[] = [
         shortDescription:
             "Fostering young minds with a holistic CBSE school curriculum from Pre-KG to 12th, focused on foundational excellence and character development",
         verticalImage:
-            "/images/school_college.jpg",
+            "/images/school_college.png",
         knowMoreUrl: "#",
     },
     {
