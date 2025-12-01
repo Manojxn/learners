@@ -25,7 +25,7 @@ export const DEFAULT_VERTICALS: Vertical[] = [
         shortDescription:
             "Connecting talent with global opportunities and fostering corporate partnerships for mutual growth.",
         verticalImage:
-            "https://images.pexels.com/photos/1181563/pexels-photo-1181563.jpeg?auto=compress&cs=tinysrgb&w=1200",
+            "/images/GCC.png",
         knowMoreUrl: "#",
     },
 ];
