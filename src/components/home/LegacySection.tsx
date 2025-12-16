@@ -165,7 +165,7 @@ export default function LegacySection() {
                         </span>
                     </h2>
                     <p className="font-paragraph text-sm sm:text-base lg:text-lg text-gray-600 max-w-3xl mx-auto px-4 sm:px-6 leading-relaxed">
-                        Founded in 2011, Learners has grown from a single institution to a comprehensive educational ecosystem, serving thousands of students across multiple verticals. Our journey has been marked by innovation, academic excellence, and an unwavering commitment to student success.
+                        Founded in 2006, Learners has grown from a single institution to a comprehensive educational ecosystem, serving thousands of students across multiple verticals. Our journey has been marked by innovation, academic excellence, and an unwavering commitment to student success.
                     </p>
                 </motion.div>
 

@@ -4,7 +4,7 @@ import FloatingContactButton from "@/components/FloatingContactButton";
 
 export const metadata = {
   title: {
-    default: "Learners School & PU College Mysore | Quality Education Since 2011",
+    default: "Learners School & PU College Mysore | Quality Education Since 2006",
     template: "%s | Learners Global",
   },
   description: "Premier educational institution in Mysore offering holistic K-12 education and PU College programs. Nurturing tomorrow's leaders with academic excellence and character development.",
@@ -24,7 +24,7 @@ export const metadata = {
     type: "website",
     locale: "en_IN",
     url: "https://learnersglobal.com",
-    title: "Learners School & PU College Mysore | Quality Education Since 2011",
+    title: "Learners School & PU College Mysore | Quality Education Since 2006",
     description: "Premier educational institution in Mysore offering holistic K-12 education and PU College programs.",
     siteName: "Learners Global",
     images: [

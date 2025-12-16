@@ -2,10 +2,10 @@ import HomePage from "@/components/pages/HomePage";
 
 export const metadata = {
   title: "Home",
-  description: "Welcome to Learners Global School, Learners PU College & Learners Digital in Mysore. Discover quality education that combines academic excellence with holistic development. Shaping tomorrow's leaders today since 2011.",
+  description: "Welcome to Learners Global School, Learners PU College & Learners Digital in Mysore. Discover quality education that combines academic excellence with holistic development. Shaping tomorrow's leaders today since 2006.",
   keywords: ["Learners School Mysore", "Best PU College Mysore", "CBSE School Karnataka", "Quality education", "Holistic development", "Academic excellence"],
   openGraph: {
-    title: "Learners School & PU College Mysore | Quality Education Since 2011",
+    title: "Learners School & PU College Mysore | Quality Education Since 2006",
     description: "Welcome to Learners School & PU College. Discover quality education that combines academic excellence with holistic development.",
     url: "https://learnersglobal.com",
     images: [
@@ -20,7 +20,7 @@ export const metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Learners School & PU College Mysore",
-    description: "Quality education combining academic excellence with holistic development since 2011.",
+    description: "Quality education combining academic excellence with holistic development since 2006.",
   },
   alternates: {
     canonical: "https://learnersglobal.com",

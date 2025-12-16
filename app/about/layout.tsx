@@ -2,10 +2,10 @@ import { Metadata } from "next";
 
 export const metadata: Metadata = {
     title: "About Us",
-    description: "Discover our mission to provide holistic education combining academic excellence with character development. Learn about our journey, values, and commitment to shaping future leaders since 2011.",
+    description: "Discover our mission to provide holistic education combining academic excellence with character development. Learn about our journey, values, and commitment to shaping future leaders since 2006.",
     keywords: ["About Learners", "Educational philosophy", "School history Mysore", "PU College values", "Our mission", "Educational excellence"],
     openGraph: {
-        title: "About Us | Learners School & PU College - Our Journey Since 2011",
+        title: "About Us | Learners School & PU College - Our Journey Since 2006",
         description: "Discover our mission to provide holistic education combining academic excellence with character development.",
         url: "https://learnersglobal.com/about",
         images: [
@@ -20,7 +20,7 @@ export const metadata: Metadata = {
     twitter: {
         card: "summary_large_image",
         title: "About Us | Learners School & PU College",
-        description: "Our mission to provide holistic education and shape future leaders since 2011.",
+        description: "Our mission to provide holistic education and shape future leaders since 2006.",
     },
     alternates: {
         canonical: "https://learnersglobal.com/about",
