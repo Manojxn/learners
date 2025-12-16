@@ -30,7 +30,7 @@ const baseAchievements = [
     {
         id: "3",
         title: "Narayana Hrudayalaya (NH) Scholarship Recognition",
-        description: "Scholarship support for NEET aspirants and separate hostel facilities for boys & girls.",
+        description: "Recognised for collaboration in academic development and Scholarship support for NEET aspirants",
         icon: GraduationCap,
         gradient: "from-emerald-50 to-teal-600",
         bgGradient: "from-emerald-50 to-teal-50",
@@ -39,7 +39,7 @@ const baseAchievements = [
     },
     {
         id: "4",
-        title: "Bageya Foundation Appreciation Award",
+        title: "BAGARIA EDUCATION FOUNDATION",
         description: "Honoured for contributions towards educational upliftment and community development.",
         icon: Heart,
         gradient: "from-rose-500 to-pink-600",

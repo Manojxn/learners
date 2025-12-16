@@ -27,7 +27,7 @@ const founders = [
     {
         name: "Madhavi Latha Konareddy",
         title: "Founder | Principal",
-        image: "/images/co-founder.png",
+        image: "/images/co-founder.jpeg",
         credentials: [
             { text: "M. Sc. Computer Science", color: "emerald" }
         ],

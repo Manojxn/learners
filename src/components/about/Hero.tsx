@@ -26,7 +26,7 @@ const Hero = () => {
             className="inline-block mb-6"
           >
             <span className="inline-flex items-center px-4 py-2 rounded-full text-sm font-medium bg-primary/10 text-primary">
-              Since 2011 • Transforming Education
+              Since 2006 • Transforming Education
             </span>
           </motion.div>
           <motion.h1

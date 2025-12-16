@@ -40,7 +40,7 @@ const stats = [
         color: "from-blue-500 to-indigo-600",
     },
     {
-        value: "10K+",
+        value: "20K+",
         label: "Students Impacted",
         icon: Users,
         color: "from-emerald-500 to-teal-600",
