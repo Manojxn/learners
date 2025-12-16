@@ -39,9 +39,18 @@ const Footer = () => {
   ];
 
   const verticals = [
-    "Learners Global School",
-    "Learners Global PU College",
-    "Learners Digital",
+    {
+      label: "Learners Global School",
+      href: "https://learnersglobalschool.com/",
+    },
+    {
+      label: "Learners Global PU College",
+      href: "https://learners.co.in/",
+    },
+    {
+      label: "Learners Digital",
+      href: "https://learnersdigital.com/",
+    },
   ];
 
   const contactInfo = [
@@ -150,12 +159,15 @@ const Footer = () => {
             </h3>
             <div className="space-y-3">
               {verticals.map((vertical) => (
-                <p
-                  key={vertical}
-                  className="text-sm text-gray-600"
+                <a
+                  key={vertical.label}
+                  href={vertical.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="block text-sm text-gray-600 hover:text-primary transition-colors"
                 >
-                  {vertical}
-                </p>
+                  {vertical.label}
+                </a>
               ))}
             </div>
           </div>

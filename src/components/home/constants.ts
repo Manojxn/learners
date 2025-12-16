@@ -8,7 +8,7 @@ export const DEFAULT_VERTICALS: Vertical[] = [
             "Fostering young minds with a holistic CBSE school curriculum from Pre-KG to 12th, focused on foundational excellence and character development",
         verticalImage:
             "/images/school_college.png",
-        knowMoreUrl: "#",
+        knowMoreUrl: "https://learnersglobalschool.com/",
     },
     {
         _id: "vertical-2",
@@ -17,7 +17,7 @@ export const DEFAULT_VERTICALS: Vertical[] = [
             "Preparing students for higher education through rigorous academic programs and career-focused guidance, strengthened by integrated NEET, JEE, CET, and IIT coaching",
         verticalImage:
             "/images/college.png",
-        knowMoreUrl: "#",
+        knowMoreUrl: "https://learners.co.in/",
     },
     {
         _id: "vertical-3",
@@ -26,7 +26,7 @@ export const DEFAULT_VERTICALS: Vertical[] = [
             "Connecting talent with global opportunities and fostering corporate partnerships for mutual growth.",
         verticalImage:
             "/images/GCC.png",
-        knowMoreUrl: "#",
+        knowMoreUrl: "https://learnersdigital.com/",
     },
 ];
 
